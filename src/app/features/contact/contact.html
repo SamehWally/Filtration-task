@@ -1,0 +1,27 @@
+<section class="contact-section">
+  <h2 class="title">CONTACT US</h2>
+  <div class="content-wrapper">
+    <!-- Left: Form -->
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-wrapper">
+      <input type="text" placeholder="Full Name" name="name" />
+      <input type="email" placeholder="Email" name="email" />
+      <input type="tel" placeholder="Phone Number" name="phone" />
+      <button type="submit" class="send-btn">SEND</button>
+    </form>
+
+    <!-- Right: Info -->
+    <div class="info-wrapper">
+      <p>
+        <fa-icon [icon]="faPhone" class="me-3"></fa-icon>
+        <a href="mailto:upskilling.eg1@gmail.com"
+          >upskilling.eg1&#64;gmail.com</a
+        >
+      </p>
+      <p>
+        <fa-icon [icon]="faEnvelope" class="me-3"></fa-icon>
+        <a href="tel:+201154932137">+20 115 493 2137</a>
+      </p>
+    </div>
+  </div>
+</section>
+<footer></footer>

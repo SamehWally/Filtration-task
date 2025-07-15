@@ -1,0 +1,107 @@
+.contact-section {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  height: 554;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    width: 1092px;
+    height: 138px;
+    font-family: sanserif, sans-serif;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 96%;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #584125;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    height: 266px;
+    gap: 150px;
+  }
+
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+
+    input {
+      width: 374px;
+      height: 56px;
+      padding-block: 12px;
+      padding-inline: 25px;
+      border: none;
+      border-radius: 61px;
+      background-color: #ffd39f;
+      color: #584125;
+      font-size: 14px;
+      margin-bottom: 10px;
+      &::placeholder {
+        color: #584125;
+        font-family: senserif, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+
+    .send-btn {
+      width: 168px;
+      height: 56px;
+      background-color: white;
+      border: 3px solid #c98a40;
+      color: #000;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 25px;
+      font-family: senserif, sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ffa500;
+      }
+    }
+  }
+
+  .info-wrapper {
+    width: 300px;
+    font-size: 1.1rem;
+    text-align: left;
+    padding-top: 50px;
+    a {
+      color: #ff9547;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 117px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #584125;
+}
