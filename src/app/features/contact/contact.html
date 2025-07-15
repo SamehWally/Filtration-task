@@ -2,10 +2,14 @@
   <h2 class="title">CONTACT US</h2>
   <div class="content-wrapper">
     <!-- Left: Form -->
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-wrapper">
-      <input type="text" placeholder="Full Name" name="name" />
-      <input type="email" placeholder="Email" name="email" />
-      <input type="tel" placeholder="Phone Number" name="phone" />
+    <form
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+      class="form-wrapper"
+    >
+      <input type="text" placeholder="Full Name" formControlName="name" />
+      <input type="email" placeholder="Email" formControlName="email" />
+      <input type="tel" placeholder="Phone Number" formControlName="phone" />
       <button type="submit" class="send-btn">SEND</button>
     </form>
 

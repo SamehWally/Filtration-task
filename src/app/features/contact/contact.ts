@@ -28,7 +28,7 @@ export class Contact {
     const payload = this.contactForm.value;
 
     this.http
-      .post('http://upskilling-egypt.com:3001/contact', payload)
+      .post('https://upskilling-egypt.com:3001/contact', payload)
       .subscribe({
         next: (res) => console.log('✅ Success:', res),
         error: (err) => console.error('❌ Error:', err),
