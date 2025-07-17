@@ -1,27 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { RecipesService } from '../../_services/recipes.service';
 
 @Component({
   selector: 'app-recipes',
-  imports: [CommonModule, HttpClientModule],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './recipes.html',
-  styleUrl: './recipes.scss',
+  styleUrls: ['./recipes.scss'],
 })
 export class Recipes implements OnInit {
+  recipes: any[] = [];
 
-  meals: any[] = [];
-
-  constructor(private http: HttpClient) {}
-
+  constructor(private recipesService: RecipesService) {}
 
   ngOnInit(): void {
-    this.http
-      .get<{ meals: any[] }>(
-        'https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast'
-      )
-      .subscribe((res: any) => {
-        this.meals = res.meals;
-      });
+    this.recipesService.getRecipes().subscribe((res) => {
+      this.recipes = res.meals;
+    });
   }
 }

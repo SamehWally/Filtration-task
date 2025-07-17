@@ -12,11 +12,11 @@
   align-items: center;
 
   .title {
-    width: 1092px;
+    width: 95%;
     height: 138px;
     font-family: sanserif, sans-serif;
-    font-weight: 800;
-    font-size: 144px;
+    font-weight: 700;
+    font-size: 60px;
     line-height: 96%;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -25,18 +25,19 @@
 
   .content-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    width: 800px;
-    height: 266px;
-    gap: 150px;
+    max-width: 100%;
+    // width: 800px;
+    // height: 266px;
+    gap: 15px;
   }
 
   .form-wrapper {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 300px;
+    // width: 300px;
 
     input {
       width: 374px;
@@ -104,4 +105,28 @@ footer {
   text-align: center;
   font-size: 14px;
   background-color: #584125;
+}
+
+@media (min-width: 1200px) {
+  .contact-section {
+    .title {
+      width: 1092px;
+      height: 138px;
+      font-family: sanserif, sans-serif;
+      font-weight: 800;
+      font-size: 144px;
+      line-height: 96%;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      color: #584125;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 90%;
+      height: 266px;
+      gap: 150px;
+    }
+  }
 }

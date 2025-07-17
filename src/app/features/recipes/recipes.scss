@@ -32,7 +32,7 @@
         h3 {
           font-size: 1.5rem;
           color: #c98a40;
-          margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
         }
 
         p {
@@ -81,14 +81,14 @@
 
       .recipe-card {
         width: 383px;
-        height: 504px;
+        height: 530px;
+        max-width: 600px;
         border-radius: 30px;
         overflow: hidden;
         border: 1px solid #ffd8ab;
         .text-box {
           h3 {
-            width: 325px;
-            height: 24px;
+            width: 95%;
             font-family: poppins, sans-serif;
             font-weight: 900;
             font-size: 16px;
@@ -97,7 +97,6 @@
           }
           p {
             width: 325px;
-            height: 120px;
             font-family: poppins, sans-serif;
             font-weight: 400;
             font-size: 14px;
@@ -109,4 +108,3 @@
     }
   }
 }
-

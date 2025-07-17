@@ -2,10 +2,10 @@
   <h2>RECIPES</h2>
 
   <div class="recipe-grid">
-    <div class="recipe-card" *ngFor="let meal of meals">
-      <img [src]="meal.strMealThumb" [alt]="meal.strMeal" />
+    <div class="recipe-card" *ngFor="let recipe of recipes">
+      <img [src]="recipe.strMealThumb" [alt]="recipe.strMeal" />
       <div class="text-box">
-        <h3>{{ meal.strMeal }}</h3>
+        <h3>{{ recipe.strMeal }}</h3>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
@@ -16,4 +16,3 @@
 
   <button>CONTACT US</button>
 </div>
-
